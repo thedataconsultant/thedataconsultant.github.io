@@ -1,57 +1,62 @@
-title: Stack Problems
-description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
-about: I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
-disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
-avatar_url: /static/img/avatar.jpg
+# Site setings
+name: 'Subtle'
+description: 'Subtle is a simple & elegant Jekyll theme for coders, writers and bloggers. Explore it yourself.'
+meta_description: 'Jekyll template, minimal style, perfect for bloggers.'
+greetings: 'Hello & Welcome to Subtle'
+logo:
+favicon: 'assets/images/favicon.ico'
+baseurl: 
+production_url: https://subtle.netlify.com/
+disqus: 'justgoodthemes'
+mailchimp_url: '//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117'
+cover_image: covers/6.jpeg
+# Add your GA Tracking Id
+ga_analytics: 
 
-enableTags: true
-tagarray: []
+# Contact form setings
+email: youremail@email.com
+contact_page_description: "Horace theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
+thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
+# Social links
+twitter: 'username'
+facebook: 'username'
+github: 'username'
+codepen: 'username'
+dribbble: 'username'
+medium: '@username'
+instagram: 'username'
+pinterest: 'username'
+linkedin: 'username'
+producthunt: '@username'
 
-social:
-    - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "#"
-    - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
-    - icon: fa-github
-      link: "https://github.com/agusmakmun"
+# Navigation
+navigation:
+  - text: About
+    url: /about
+  - text: Style Guide
+    url: /style-guide
+  - text: Contact Me
+    url: /contact
 
-share:
-  twitter_username: github.io
-  fb_appid: 1749788565247320
-
-urls:
-    - text: About Me
-      url: /about/
-    - text: My Projects
-      url: /projects/
-    - text: XML Feed
-      url: /feed.xml
-
-url: "https://agusmakmun.github.io"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
-markdown: kramdown
-gems:
+# Required Plugins
+plugins_dir:
   - jekyll-paginate
-  - jekyll-gist
+  - jekyll-tagsgenerator
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: ['development']
+# Pagination
+paginate: 7
+paginate_path: /page:num/
+
+# Permalinks
+permalink: /:title
+
+# Other
+markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
